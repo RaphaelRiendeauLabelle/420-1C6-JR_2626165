@@ -91,7 +91,7 @@ int main()
     //std::cout << "Erreur : pas de point virgule\n"
 
     // TODO: Afficher le résultat du calcul 20 + 5 - 10 * 10 / 5
-    "std::cout << 20 + ((5 - 10) * 10) / 5 \n =  << 20 + ((5 - 10) * 10) / 5"
+    std::cout << "20 + ((5 - 10) * 10) / 5 ="  << 20 + ((5 - 10) * 10) / 5"
 
     // TODO: Afficher l'équation et le résultat du calcul avec priorité des opérations 20 + ((5 - 10) * 10) / 5
     //       Besoin de 2 opérateurs (<<) pour afficher la chaine de caractère suivi du nombre calculé
