@@ -1,10 +1,15 @@
+
+
 // TODO: Avant de créer le Projet, faire un 'git clone' ou un 'git pull' si dossier Git est déjà présent
 
 
 // TODO: Ajouter un en-tête
-
+/* Auteur: Raphael Riendeau-Labelle 
+Date:20260827
+description : entrées sorties à la console*/
 
 // TODO: Sauvegarder le code sur le Git local et envoyer sur GitHub
+/*fait*/
 
 // *** Librairie <iostream> ***
 // Inclure les éléments de lecture et d'écriture à la Console
@@ -106,7 +111,6 @@ int main()
 	int entier = 10;
 	double nombreReel = 1.23456;
 	char caractere = 'a';
-
 	// Contenu en mémoire des 6 variables précédentes
 	// ... 'B' 'o' 'n' 'j' 'o' 'u' 'r' '\0' '1' ' ' '2' ' ' '3' '.' '.' '.' '\0' '\0' 10 1.23456 'a' ...
 
@@ -221,9 +225,9 @@ int main()
 	// Notes: 15.01, 12.35, 18.79
 	// Moyenne: 15 / 20
 	// Pourcentage: 76.9 %
-
-
-
+	cout << format("Notes: {:.2f}, {:.2f}, {:.2f}\n", note1, note2, note3);
+	cout << format("Notes: {:.0f} / {:.0f}\n", moyenneNotes, maximumNotes);
+	cout << format("Notes: {:.1f}%\n", pourcentageNotes);
 	// Méthode 3 conserver le format() dans une variable avant l'affichage
 	// - Utile pour accumuler du texte et afficher une seule fois plus tard dans le programme
 	// - Découpler la détection des erreurs et l'affichage des erreurs
@@ -240,15 +244,16 @@ int main()
 	cout << "\n *** Message modifié avec les opérateurs + et += ***\n";
 
 	// TODO: Ajouter du texte au début du message (texte = "ajout" + texte)
-
+	messageFormatModifie = "DEBUT" + messageFormatModifie;
 
 	// TODO: Ajout du texte à la fin (texte += "ajout")
-
+	messageFormatModifie += "FIN";
 
 	// TODO: Ajouter 3 lignes vides à la fin
-
-
-
+	messageFormatModifie += "\n";
+	messageFormatModifie += "\n";
+	messageFormatModifie += "\n";
+	
 	cout << messageFormatModifie;
 
 #pragma endregion
@@ -258,40 +263,44 @@ int main()
 	// - Attendre que l'utilisateur saisisse la valeur au clavier avant de continuer le programme
 	// - Programme bloque à l'instruction 'cin >> ...' jusqu'à ce que l'utilisateur appuie sur Entrée
 	cout << "\n--- Entrées au clavier à la Console ---\n";
-
-	// Saisie d'un nom à la Console
-	// - Afficher un texte à l'utilisateur pour qu'il comprennen qu'il doit faire une saisie
-	// - Déclarer une variable pour entreposer la valeur lue
-	//		- Variable est non initialisée
-	//		- Valeur aléatoire sera écrasée par la saisie au clavier de l'utilisateur
-	//		- Possible aussi d'initialiser avec une valeur par défaut
-	// - Ne jamais utiliser la variable non initialisée avant la lecture au clavier
-	// - Attention, pas de validation au niveau des lecture effectuées par cin
-	// - Valeur par défaut (0) est attribuées si la lecture échoue (ex. saisir "abc" si on demande un entier)
-	cout << "Entrer votre nom : ";
+	cout << "message d'échappements : \\0 \"salut";
+		// Saisie d'un nom à la Console
+		// - Afficher un texte à l'utilisateur pour qu'il comprennen qu'il doit faire une saisie
+		// - Déclarer une variable pour entreposer la valeur lue
+		//		- Variable est non initialisée
+		//		- Valeur aléatoire sera écrasée par la saisie au clavier de l'utilisateur
+		//		- Possible aussi d'initialiser avec une valeur par défaut
+		// - Ne jamais utiliser la variable non initialisée avant la lecture au clavier
+		// - Attention, pas de validation au niveau des lecture effectuées par cin
+		// - Valeur par défaut (0) est attribuées si la lecture échoue (ex. saisir "abc" si on demande un entier)
+		cout << "Entrer votre nom : Raphal Riendeau Labelle ";
 	string nom; // Variable non initialisée
 	cin >> nom; // Initialise la variable avec la valeur saisie par l'utilisateur
 
 	// TODO: Ajouter une saisie pour l'age à la Console
-
-
+	cout << "Entrer votre age : ";
+	int age;
+	cin >> age;
+	
 	// TODO: Ajouter une entrée pour la hauteur à la Console
-
+	cout << "Entrer votre hauteur : ";
+	int hauteur;
+	cin >> hauteur;
 
 	// TODO: Afficher un message formatté à l'écran : Bonjour ###, vous avez ### ans et mesurez ###.## mètres !
-
+	cout << format("Salut jeune voyageur nommé {}, tu as présentement {}, et tu est plus petit que donald trump tu mesure {}, mètres !", nom, age, hauteur);
 
 	// *** Attendre une touche ***
 	// TODO: Attendre que l'utilisateur appuie sur Entrée avant de continuer le programme
 	// - Empêche exécutable compilé (.exe) de se fermer automatiquement une fois le programme terminé
 	std::cout << "\nAttendre que l'utiliser appuie sur une toucher avec system(\"pause\");\n";
-
+	system("pause");
 	// TODO: Ouvrir l'exécutable compilé (.exe) pour vérifier qu'il ne se ferme plus de façon instantanée
 
 	// TODO: Effacer l'écran de la Console (Clear Screen)
 	// - Remarquer que le message ne s'affichera plus, car il est rapidement effacé de la Console
 	std::cout << "\Effacer l'écran de la Console avec system(\"cls\");\n";
-
+	system("cls");
 #pragma endregion
 
 #pragma region TroncationCast
@@ -362,17 +371,16 @@ int main()
 	// 
 	// (int)1.75 * 2 + 5.5
 	// 
-	// 1) 
-	// 2) 
-	// 3) 
+	// 1) 1 * 2 + 5.5
+	// 2) 2 + 5.5
+	// 3) 7.5
 	std::cout << format("(int)1.75 * 2 + 5.5 = {}\n", (int)1.75 * 2 + 5.5);
 
 	// TODO: Exemple de cast avec parenthèses
 	// - Résoud la parenthèse en premier et affecte le résultat complet
 	// 
 	// (int)(1.75 * 2 + 5.5)
-	// 
-	// 1) 
+	// 1)(1.75 * 2 + 5.5)
 	// 2) 
 	// 3) 
 	std::cout << format("(int)(1.75 * 2 + 5) = {}\n", (int)(1.75 * 2 + 5.5));

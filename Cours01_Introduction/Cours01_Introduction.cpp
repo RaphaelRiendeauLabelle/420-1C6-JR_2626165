@@ -1,9 +1,9 @@
 // TODO: Ajouter un en-tête (Auteur, Date, Description)
-/*
-  Auteur : Raphael Riendeau
+/* Auteur : Raphael Riendeau
   Date: 2026-08-20
-  Description : introduction à la programmation
-  */
+  Description : introduction à la programmation 
+*/
+  
 
 // Commentaire !
 
@@ -91,18 +91,18 @@ int main()
     //std::cout << "Erreur : pas de point virgule\n"
 
     // TODO: Afficher le résultat du calcul 20 + 5 - 10 * 10 / 5
-    std::cout << "20 + ((5 - 10) * 10) / 5 =" << 20 + ((5 - 10) * 10) / 5;
+
 
     // TODO: Afficher l'équation et le résultat du calcul avec priorité des opérations 20 + ((5 - 10) * 10) / 5
     //       Besoin de 2 opérateurs (<<) pour afficher la chaine de caractère suivi du nombre calculé
-
-    /*
-      1: (5-10)= -5
-      2: ((-5)*10)= -50
-      3: -50 / 5 = -10 
-      4: -10 + 20 = 10
-      !! RÉSULTAT = 10 !!
-      */
+   
+        /*
+          1: (5-10)= -5
+          2: ((-5)*10)= -50
+          3: -50 / 5 = -10
+          4: -10 + 20 = 10
+          !! RÉSULTAT = 10 !!
+          */
 }
 
 // TODO: Faire le Devoir à la maison

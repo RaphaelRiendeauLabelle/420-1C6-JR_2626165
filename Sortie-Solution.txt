@@ -1,0 +1,2 @@
+﻿D:\Cours01_Introduction\Cours01_Introduction.vcxproj : error  : Impossible de trouver le projet "D:\Cours01_Introduction\Cours01_Introduction.vcxproj".
+

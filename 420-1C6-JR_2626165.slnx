@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="../Cours01_Introduction/Cours01_Introduction.vcxproj" />
+  <Project Path="Cours01_Introduction/Cours01_Introduction.vcxproj" Id="7754213b-feb5-4d01-b4de-6f4ab409be35" />
+  <Project Path="Cours02_Introduction.cpp/Cours02_Introduction.cpp.vcxproj" Id="4f699230-bc6f-4be7-8a52-96a7fa76c310" />
+  <Project Path="Cours04_EntreesSorti/Cours04_EntreesSorti.vcxproj" Id="2d767528-b52e-4849-ace6-def19e2ebb74" />
 </Solution>
