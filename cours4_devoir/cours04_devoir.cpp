@@ -8,5 +8,8 @@ using namespace std;
 
 int main()
 {
-	std::cout << "Hello world!\n";
-}
+	// Configuration de la console en Français Unicode pour les accents
+	setlocale(LC_ALL, "fr_CA.UTF-8");
+
+	// Affichage de l'en-tête
+	cout << "--- Cours 04 - devoir ---\n";
