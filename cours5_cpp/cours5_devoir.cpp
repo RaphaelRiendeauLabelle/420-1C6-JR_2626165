@@ -195,7 +195,7 @@ int main()
 	// Sélectionner un seul travail à faire parmis plusieurs selon des conditions booléenes
 	// - Conditions
 	//      - Évaluées dans l'ordre à partir du if() et ensuite chaque else if() 
-	//      - Première condition vrai (true) sera le travail à effectuer
+	//      - Première condition vrai (true) sera le travail à effectuergit
 	//      - Autres conditions ne seront pas vérifiées et les autre Travaux ne seront pas effectués
 	// - Programme continue son exécution après le bloc complet if () else if () else
 	//
@@ -261,7 +261,7 @@ int main()
 	// Erreur 2) Accolades manquantes ou supplémentaires
 	//if (nombre > 100)
 	//// Erreur
-	//	cout << format("Accolades");
+	//cout << format("Accolades");
 	//} 
 	//{} // Erreur
 	//else
@@ -418,10 +418,31 @@ int main()
 	// - Moins que 59% : "Échec"
 
 	cout << "\n--- Notes ---\n";
+	cout << "Entrer la note (0-100) : ";
+	int notePourcentage;
+	cin >> notePourcentage;
+	
+	if (notePourcentage>= 90)
+	{
+		cout << "A\n";
 
-
-
-
+	}
+	else if (notePourcentage >=75)
+	{
+		cout << "B\n";
+	}
+	else if (notePourcentage >= 60)
+	{
+		cout << "C\n";
+	}
+	else if (notePourcentage == 59)
+	{
+		cout << "D\n";
+	}
+	else
+	{
+		cout << "Échec\n";
+	}
 	// *** Imbrication de conditions ***
 	// - Peut imbriquer un conditions if dans une autre condition if
 	// - Faire un travail uniquement si certaines conditions supplémentaires sont respectées
