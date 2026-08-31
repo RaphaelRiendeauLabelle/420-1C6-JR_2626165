@@ -17,7 +17,7 @@ int main()
 	
 #pragma endregion
 	//Exercice.01
-// Description de l’exercice 
+    // Description de l’exercice 
 	                                  
 	double a = 10.0 + 12.0 / 8;					// 11.5
 	double b = 27.0 + 3.0 / 14;				    // 27.21 
