@@ -1,77 +1,68 @@
 /* Auteur: Raphael Riendeau-Labelle
 Date:20260827
 description : entrées sorties à la console*/
-
-// Utilisation du namespace Standard (std::) pour les librairies
+#include <format>
 #include <iostream>
 #include <string>
-#include <format>
+
+
 using namespace std;
 
-int main() {
-#pragma endregion
-	using namespace std;
-	// Configuration de la console en Français Unicode pour les accents
-	setlocale(LC_ALL, "fr_CA.UTF-8");
+int main()
+{
+    setlocale(LC_ALL, "fr_CA.UTF-8");
 
-	// Affichage de l'en-tête
-	cout << "--- Cours 05 - devoir ---\n";
+    cout << "--- Devoir 5 - Raph - 2626165 ---\n\n";
 
-	cout << "Entrer la largeur du rectangle : ";
-	int largeurRectangle;
-	cin >> largeurRectangle;
+    cout << "Entrer la largeur du rectangle : ";
+    int largeurRectangle;
+    cin >> largeurRectangle;
 
-	cout << "Entrer la hauteur du rectangle : ";
-	std::string haut_rectangle;
-	cin >> haut_rectangle;
-	int haut_rectangle;
-	
+    cout << "Entrer la hauteur du rectangle : ";
+    int hauteurRectangle;
+    cin >> hauteurRectangle;
 
-
-		if (largeurRectangle <= 0)
-		{
-			cout << "Erreur : largeur ne peut être 0 ou négative.";
-		}
-		else (haut_rectangle <= 0)
-	{
-			cout << "Erreur : hauteur ne peut être 0 ou négative.";
-	}
-
-else if (largeurRectangle == haut_rectangle)
+    if (largeurRectangle <= 0)
     {
-		cout << format("Carré {} par {}\n", largeurRectangle);
+        cout << "Erreur : largeur ne peut être 0 ou négative.\n";
     }
-else if (largeurRectangle > haut_rectangle)
+    else if (hauteurRectangle <= 0)
     {
-		cout << format("Rectangle {} par {}\n, largeurRectangle haut_rectangle");
-
-		double ratioHauteur = largeurRectangle / haut_rectangle;
-		double ratio = haut_rectangle / largeurRectangle
-        
-			cout << format("{:3.f} % plus large que haut\n", ratioHauteur);
-
+        cout << "Erreur : hauteur ne peut être 0 ou négative.\n";
     }
-else
-cout << format("Rectangle {} par {}\n", largeurRectangle, haut_rectangle);
-cout << "Plus haut que large\n";
+    else if (largeurRectangle == hauteurRectangle)
+    {
+        cout << format("Carré {} par {}\n",largeurRectangle);
+    }
+    else if (largeurRectangle > hauteurRectangle)
+    {
+        cout << format("Rectangle {} par {}\n",largeurRectangle, hauteurRectangle);
 
+        double ratioHauteur = double (largeurRectangle) / hauteurRectangle;
 
-Ratio = haut_rectangle / largeurRectangle;
-   {
+        cout << format("{:.3f} fois plus large que haut\n",ratioHauteur);
+    }
+    else
+    {
+        cout << format("Rectangle {} par {}\n",largeurRectangle, hauteurRectangle );
 
-cout << format("{:.3f} % plus haut que large\n", Ratio);
-	}
+        cout << "Plus haut que large\n";
 
-	double a = largeurRectangle * haut_rectangle;
-	double PERIMÈTRE = 2 * (largeurRectangle + haut_rectangle);
+        double ratioHauteur =double (hauteurRectangle) / largeurRectangle;
 
+        cout << format("{:.3f} fois plus haut que large\n", ratioHauteur);
+    }
 
-		cout << format("Aire : {:.2f}\n", a);
-	cout << format("Perimètre : {:.2f}\n", PERIMÈTRE);
+    double aire = double(largeurRectangle) * hauteurRectangle;
 
-	
+    double perimetre =
+        2.0 * (largeurRectangle + hauteurRectangle);
 
+    cout << format("Aire : {:.2f}\n", aire);
+    cout << format("Périmètre : {:.2f}\n", perimetre);
 
-	
-	return 0
+    system("pause");
+    system("cls");
+
+    return 0;
 }
