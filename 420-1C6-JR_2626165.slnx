@@ -7,8 +7,10 @@
   <Project Path="Cours02_Introduction.cpp/Cours02_Introduction.cpp.vcxproj" Id="4f699230-bc6f-4be7-8a52-96a7fa76c310" />
   <Project Path="Cours04_EntreesSorti/Cours04_EntreesSorti.vcxproj" Id="2d767528-b52e-4849-ace6-def19e2ebb74" />
   <Project Path="Cours06_conditions/Cours06_conditions.vcxproj" Id="51c8a630-8d96-4c25-8950-a532aa00ff8f" />
+  <Project Path="cours08/cours08.vcxproj" Id="40237dcd-4e6c-4495-b90d-1717e9e60a4f" />
   <Project Path="cours3/cours3.vcxproj" Id="c294b0dc-dd05-440d-9f07-58d5da506aed" />
   <Project Path="cours4_devoir/cours4_devoir.vcxproj" Id="39fbea45-2505-4f01-8379-e94cd52f2233" />
   <Project Path="cours5_cpp/cours5_cpp.vcxproj" Id="83804120-45ae-425d-a66c-a038c22f35e2" />
   <Project Path="cours7/cours7.vcxproj" Id="dd3ca623-7417-4335-acb0-9e907fcbe258" />
+  <Project Path="jeudetest_tp1/jeudetest_tp1.vcxproj" Id="1d78fe95-8aac-4165-a291-9f6f03911e98" />
 </Solution>

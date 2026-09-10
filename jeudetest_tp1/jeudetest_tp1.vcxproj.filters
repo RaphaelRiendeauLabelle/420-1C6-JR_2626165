@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cours08.cpp">
+    <ClCompile Include="TP1_RIENDEAU-LABELLE_262616DEVOIRS.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
